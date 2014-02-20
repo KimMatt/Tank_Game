@@ -1,4 +1,4 @@
-package Taaaaaaaaaaaaaaaaaaaaaaaaaaaaanks;
+package Tanks;
 
 public class Bullet {
 

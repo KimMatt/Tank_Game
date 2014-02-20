@@ -1,4 +1,4 @@
-package Taaaaaaaaaaaaaaaaaaaaaaaaaaaaanks;
+package Tanks;
 
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;

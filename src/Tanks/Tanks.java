@@ -1,4 +1,4 @@
-package Taaaaaaaaaaaaaaaaaaaaaaaaaaaaanks;
+package Tanks;
 
 import java.awt.Color;
 import java.awt.Component;
