@@ -1,10 +1,5 @@
 package Tanks;
 
-import java.awt.Color;
-import java.awt.Graphics;
-
-import javax.swing.JPanel;
-
 public class Terrain{
 
 	private int[] xpoints = new int[1083];

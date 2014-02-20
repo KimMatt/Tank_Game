@@ -1,9 +1,5 @@
 package Tanks;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.event.ActionListener;
-
 public class Main {
 
 	/**

@@ -1,21 +1,25 @@
 package Tanks;
 
-import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
-
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 
 public class Canvas implements KeyListener{
+
+//Creates the frame and data of tanks
 Tanks ts = new Tanks();
 JFrame frame = new JFrame();
-KeyListener controls;
+//An int to represent the game's status
 int s;
+//Distance moved on a turn
 int moved;
 
+/**
+ * Constructor for Canvas that creates the game frame,
+ * sets the size to 1080x1920 pixels, close operation,
+ * updates the screen, adds keyListener and the tanks JPanel
+ * to the frame. 
+ */
 public Canvas(){
 	s = 0;
 	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,7 +27,7 @@ public Canvas(){
 	frame.setVisible(true);
 	frame.add(ts);
 	frame.repaint();
-	ts.addKeyListener(this);
+	frame.addKeyListener(this);
 	ts.setFocusable(true);
 }
 
@@ -36,6 +40,11 @@ public Tanks getTanks(){
 }
 
 @Override
+/**
+ * Takes in all key inputs, if they are one of the control's it performs
+ * appropriate data changes and visual changes are called from the frame's
+ * repaint method.
+ */
 public void keyPressed(KeyEvent e){
 	if(e.getKeyCode() == 37){
 		if(moved <=40 && ts.getTurn() == 1){

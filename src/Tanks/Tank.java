@@ -1,10 +1,5 @@
 package Tanks;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.event.ActionListener;
-
-import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Tank extends JPanel{
