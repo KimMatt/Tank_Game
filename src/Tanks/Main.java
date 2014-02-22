@@ -13,7 +13,6 @@ public class Main {
 		window.getTanks().update();
 		window.paint();
 	}
-	System.exit();
 	}
 
 }
